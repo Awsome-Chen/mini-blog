@@ -1,13 +1,15 @@
-# mini-blog
+# Easy-Personal-Website
 
-## 实现
+## 依赖
 
-`WSGI`使用`Python`的Bottle框架，前端框架用到了`Bulma`和`jQuery`。
+Bottle.py
 
-## 目的
+markdown.py
 
-实现我的个人知识库归档与快速查找的功能。
+Bulma.CSS
 
-## 问题
+jQuery.js
 
-不想将编辑功能写在网页里面，还需要为路由`/post`写一个程序可以提交文章，设想是仿照`git`来做一款同步文件夹下所有文件改动的命令行程序，配置文件全部用`JSON`的形式写在`markdown`的第一个代码区块里面。后面可能会用到`Nginx`来配置SSL，留一个`HTTP`接口给`/post`路由，解决安全问题还需要用到`token`等。
+## 用途
+
+实现我的个人知识库归档与快速查找、进行一些资源的汇总。

@@ -6,11 +6,19 @@
     <title>{{!article["article_name"]}}</title>
     <link rel="stylesheet" href="../static/css/bulma.min.css">
     <style>
+      @font-face{
+        font-family: 'kai';
+        src: url('../static/fonts/求福.ttf');
+      }
       * {
         font-family: 'Times New Roman', Times, serif;
       }
       li {
         color: hsl(217, 71%, 53%);
+      }
+      strong{
+        font-family: 'kai';
+        font-size: x-large;
       }
     </style>
   </head>
@@ -26,8 +34,12 @@
           <div class="column is-11">
             <div class="container">
               <div class="content">
+              <div class="block">
                 <b class="title">{{article["article_name"]}}</b>
+              </div>
+              <div class="block">
                 {{!article["content"]}}
+              </div>
               </div>
             </div>
           </div>
@@ -40,14 +52,8 @@
           </div>
           <div class="column is-8">
             <div class="content">
-            <h3><i>标签</i></h3>
-            <ul>
-            %for label in article["labels"]:
-              <li>{{label}}</li>
-            %end
-            </ul>
             <h3><i>留言</i></h3>
-            <p>{{article["message"]}}<br><i>留言引注</i></p>
+            <p>{{article["message"]}}</p>
             </div>
         </div>
       </div>
